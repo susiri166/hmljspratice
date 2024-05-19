@@ -1,0 +1,41 @@
+.sample-background{
+    background-image: url('./img.jpg');
+    background-repeat: no-repeat;
+    height: 700px;
+    background-size: cover;
+}
+
+.main_section{
+    padding-top: 40px;
+    padding-left: 80px;
+}
+
+.header_alingment{
+    font-size: 245px;
+    color: palevioletred;
+
+
+    @media screen and(max-width: 992px){
+        font-size: 5px;
+        background-color: blue;
+        text-align: center;
+    }
+}
+
+.sub_header_alignment{
+    font-size: 22px;
+    color: white;
+    font-weight: 100;
+  
+}
+.button_alignment{
+    background-color: red;
+    width: 155px;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.button_text{
+    color: white;
+}
+
