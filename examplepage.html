@@ -9,12 +9,14 @@
 <body>
     <div class="sample-background">
         <div class="main_section">
-            <h2 class="header_alingment">Welcome To AIO-IT Tutoring</h2>
+            <h2 class="header_alingment" id="title">Welcome To AIO-IT Tutoring</h2>
             <h4 class="sub_header_alignment">First Day Section</h4>
-            <button class="button_alignment">
+            <button class="button_alignment" onclick="test()">
                 <span class="button_text">Click Here</span>
             </button>
-
+            <br>
+            <input type="text" id="input1">
+            <h3 id=""></h3>
             <div class="mt-5 card card-aligement">
                 <div class="image_alligement">
                     <img src="" alt="">
@@ -22,5 +24,47 @@
             </div>
         </div>
     </div>
+
+    <script>
+
+        function test() {
+           const t=document.getElementById('input1').value;
+           
+            document.getElementById('title').style.color="green";
+
+        }
+
+        const testobject ={
+            key1:"value 1",
+            key2:"value 2",
+            key3:"value 3",
+            key4:{
+                innerkey1:"val1",
+                innerkey2:"val2",
+            }
+        }
+
+        console.log(testobject.key4.innerkey2);
+
+
+        const newobjectarray=[
+            {
+                firstnames:'name1'
+            }
+        ]
+      
+
+        newobjectarray.push({
+            firstnames:'name2'
+        })
+
+        console.log(newobjectarray);
+      
+
+        const arraynew=[
+            'element1'
+        ]
+        arraynew.push('element2','element3 ')
+    </script>
 </body>
 </html>
